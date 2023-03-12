@@ -20,3 +20,11 @@ li {
   margin-right: .5em;
   margin-left: .5em;
 }
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}

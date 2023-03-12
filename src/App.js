@@ -6,6 +6,7 @@ import Specials from './components/specials';
 import Testimonials from './components/testimonials';
 import AboutMe from './components/aboutme';
 import Footer from './components/footer';
+import BookingPage from './components/BookingPage';
 import React from "react"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Navigation />
       <Main />
+      <BookingPage />
       <Specials />
       <Testimonials />
       <AboutMe />
