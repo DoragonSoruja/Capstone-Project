@@ -33,6 +33,8 @@ function BookingForm() {
     }
 
     return (
+        <section>
+        <h1>Book Now</h1>
         <form onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
             <input type="date" id="res-date" value={date} onChange={handleDateChange} />
@@ -54,6 +56,7 @@ function BookingForm() {
             </select>
             <input type="submit" value="Make Your reservation" />
         </form>
+        </section>
     )
 }
 
