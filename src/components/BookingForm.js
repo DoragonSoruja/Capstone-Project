@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import { fetchAPI, submitAPI } from "./random";
+import ConfirmedBooking from "./ConfirmedBooking";
 
 function BookingForm() {
 
@@ -9,6 +10,7 @@ function BookingForm() {
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("Birthday");
     const [initializeTimes, updateTimes] = useState(fetchAPI(currentDate))
+    const [confirmed, setConfirmed] = useState(false)
 
     useEffect(() => {
         updateTimes(fetchAPI(new Date(date)))
@@ -29,11 +31,13 @@ function BookingForm() {
         setGuests(1)
         setTime("17:00")
         setOccasion("Birthday")
+        setConfirmed(true)
     }
 
     return (
         <section>
         <h1>Book Now</h1>
+        {confirmed && <ConfirmedBooking />}
         <form onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
             <input type="date" id="res-date" value={date} onChange={handleDateChange} />
