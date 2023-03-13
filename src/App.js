@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Navigation />
       <Main />
-      <BookingPage />
       <Specials />
       <Testimonials />
       <AboutMe />
+      <BookingPage />
       <Footer />
     </React.Fragment>
   );
