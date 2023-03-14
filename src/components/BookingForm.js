@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { fetchAPI, submitAPI } from "./random";
+import { fetchAPI } from "./random";
 import ConfirmedBooking from "./ConfirmedBooking";
 
 function BookingForm() {
@@ -26,7 +26,6 @@ function BookingForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        alert(`Time is set to ${time}.\nAt ${date} \nThe amount of guests is ${guests} \nThe occasion is a(n) ${occasion}`)
         setDate(currentDate)
         setGuests(1)
         setTime("17:00")
@@ -35,7 +34,7 @@ function BookingForm() {
     }
 
     return (
-        <section>
+        <section id="form">
         <h1>Book Now</h1>
         {confirmed && <ConfirmedBooking />}
         <form onSubmit={handleSubmit}>

@@ -1,6 +1,6 @@
 function Footer() {
     return (
-    <footer>
+    <footer id="footer">
         <p>Copyright</p>
     </footer>
     )

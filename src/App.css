@@ -29,6 +29,7 @@ body {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #home h1 {
@@ -96,7 +97,155 @@ form {
   gap: 20px;
 }
 
+#specials {
+  background-color: white;
+  color: black;
+}
+
+#specials p {
+ text-align: left;
+ padding-left: 1em;
+ font-family: 'Karla';
+}
+
+#specials h3 {
+  text-align: left;
+  padding-left: 16px;
+  font-family: 'Marzaki';
+}
+
+#specials h1 {
+  margin: 0;
+  font-family: 'Marzaki';
+  font-size: 40px;
+  color: black;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+
+#specials img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+#specials #dishes {
+  display:flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+#specials #dishes article {
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: lightgrey;
+}
+
+
+#testimonials {
+  background-color: #495e57;
+}
+
+#testimonials h1 {
+  margin: 0;
+  padding-top: .5em;
+  font-family: 'Marzaki';
+  font-size: 40px;
+}
+
+#testimonials p {
+  font-family: 'Karla';
+}
+
+#testimonials section {
+  padding-bottom: .5em;
+}
+
+#testimonials #reviews {
+  display:flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+#testimonials #reviews article {
+  margin-left: 2em;
+  margin-right: 2em;
+  border-style: solid;
+  border-color:black;
+  background-color: white;
+  color: black;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: left;
+}
+
+#aboutme {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-left: 3em;
+  text-align: left;
+}
+
+#aboutme h1 {
+  margin: 0;
+  padding-top: .5em;
+  font-family: 'Marzaki';
+  font-size: 40px;
+}
+
+#aboutme section {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#aboutme p {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+#aboutme img {
+  width: 325px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+#aboutme #image1 {
+  position:relative;
+  top: 0%;
+  left: 50%;
+}
+
+#aboutme #image2 {
+  position: relative;
+  top: 20%;
+  left: -30%;
+}
+
+#form {
+  padding-top: 4em;
+  padding-bottom: 1em;
+  background-color: white;
+  color:black
+}
+
+#footer {
+  background-color: #495e57;
+  margin: 0;
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
 #reservation_confirm {
   background-color: rgb(0, 224, 0);
-  color: black
+  color: black;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-style: solid;
+  margin-left: 20%;
+  margin-right: 20%;
 }
